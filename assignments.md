@@ -1,12 +1,4 @@
-# Object Oriented Programming Assignment 2023
-
-## Assignment
-
-- Fork [this starter project](https://github.com/skooter500/MusicVisuals)
-
-- [Final Submission Link](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUNUdXUUVaRFJKOVpOWUczNzZMMU1IUzhKMC4u)
-
-# Assignment 2 - Due Wednesday 3rd May 2023 - IN PERSON DEMOS
+# Object Oriented Programming Assignment 2024
 
 Assignment Title: Abstract Visual Story of a Song *Team Project*
 
