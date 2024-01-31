@@ -12,14 +12,19 @@ public class BugZap extends PApplet {
 	}
 
 
-	public void keyPressed() {
-		
-		if (keyCode == LEFT) {
-		}
-		if (keyCode == RIGHT) {
-		}
-		if (keyCode == ' ')
+	public void keyPressed()
+	{
+		if (keyCode == LEFT)
 		{
+			System.out.println("Left arrow pressed");
+		}
+		if (keyCode == RIGHT)
+		{
+			System.out.println("Right arrow pressed");
+		}
+		if (key == ' ')
+		{
+			System.out.println("SPACE key pressed");
 		}
 	}
 
