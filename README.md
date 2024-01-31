@@ -38,7 +38,7 @@ This is a video of a game the game made in Java using the Processing libraries.
 
 How you should do it:
 
-- Accept the assignment on github classroom.
+- Accept [the assignment](https://classroom.github.com/a/DGPd3gkL) on github classroom.
 - Clone the repo onto each team members computer
 - Each team member make commits as you are working along
 
