@@ -20,12 +20,91 @@ Resources
 ## Assignments
 - [Assignments](assignments.md)
 
+# Week 2 - Java Fundamentals & Drawing
+
+## Lecture
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EfYGCKGcbGxBpd_CoVMy5WUB3vmTjCm_uAVa_1w7iMMzqw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wUe3Ng)
+
+## Lab
+## Learning Outcomes
+- Practice drawing stuff and working out co-ordinates
+- Practice using variables and if statements in Java
+
+Share screenshots on discord PLEASE. BugZap was a game for the BBC Micro around 40 years ago, today YOU will recreate it. Just get as much as you can working in a couple of hours and commit as you are going along. Work together and help each other! Work in a group if you want to combine your work and get practice with git.
+
+This is a video of a game the game made in Java using the Processing libraries. 
+
+[![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
+
+How you should do it:
+
+- Accept this assignment on github classroom.
+- Clone the repo
+- Make commits as you are working along!
+
+Ok let's get the main game working first and not worry about the splash screen and the game over screen
+
+- There is a class called BugZap.java. Thats where you will be working today 
+- Make sure everything works by compiling and running your program before continuing!
+
+Now we can draw the bug.
+
+- Make fields of type ```float``` in the BugZap class for ```playerX```, ```playerY``` and ```playerWidth``` and give these default values. You can decide what these should be. There are built in variables called ```width``` and ```height``` that give the width and height of the drawing window. These only get assigned after size has been called, so if you want to use these to give values to playerX, playerY etc. put the code into the *setup* method. 
+- Write a method called void ```void drawPlayer(float x, float y, float w)``` that draws the player character, centered around the parameters x, y. You can use the line method to do this. You can pass variables as parameters to this method and also things like ```x + 20```, ```w * 0.5f``` etc. I made an extra variable in this method called h for the height and set it to be half the w parameter. Don't forget to set the stroke color!
+- Call this method from ```draw```, passing in the parameters playerX, playerY and playerWidth.
+- Compile and run everything to make sure it's working before continuing.
+- If everything is working ok, you should see the bug on the screen
+
+Now lets get the player moving in response to the keys
+
+```Java
+public void keyPressed()
+	{
+		if (keyCode == LEFT)
+		{
+			System.out.println("Left arrow pressed");
+		}
+		if (keyCode == RIGHT)
+		{
+			System.out.println("Right arrow pressed");
+		}
+		if (key == ' ')
+		{
+			System.out.println("SPACE key pressed");
+		}
+	}	
+```
+
+- If you compile and run the program again you will see that some messages get printed out when you press various keys. If you are running in Visual Studio Code, you will see these messages appear in the Debug Console
+- Modify this method to increment and decrement the playerX variable instead and you should be able to get the player to move left and right
+- You might want to add if statements to this method to stop the player moving off the left and right side of the screens. If statements in Java are almost the same as in C!
+- When the player presses SPACE you will want to draw a line for the player's laser.
+
+The Bug
+
+- In a similar way to how you made the player, make the Bug. Make variables and drawBug method. Don't forget to call the method from draw()
+- To move the bug you can add a random amount to it's x coordinate on intervals. To generate a random number you can use the [random](https://processing.org/reference/random_.html) function.  
+- One way to make stuff happen on an interval rather than every frame is to use the frameCount variable. This variable is a field in PApplet and it gets incremented automatically every time draw is called. Because draw gets called 60 times a second, you can do something every second with this code:
+
+```Java
+if ((frameCount % 60) == 0)
+{
+    // Do something
+}
+```
+
+- You can print text to the screen using the [text](https://processing.org/reference/text_.html) function.
+
+Ok you should now have the basics working. See if you can figure out how to check to see if the player hits the bug, add scoring, splash screen, game over screen and sound.
+
 # Week 1 - Introduction
 
 ## Lecture
 - [Introduction Slides](https://tudublin-my.sharepoint.com/:p:/g/personal/bryan_duggan_tudublin_ie/EYXKcGlJFllBoLfJ_GjdH8ABu2OQCKyRsXuqlPqb3yXMtA?e=7hN0YC)
 
-- [Recording of the class](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EUzKV4H1siFOiSsI8Hv6teUBNBW_aols8cnkJN_MYskBYw?e=nJXD7A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- [Class](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EUzKV4H1siFOiSsI8Hv6teUBNBW_aols8cnkJN_MYskBYw?e=nJXD7A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+- [Tutorial](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/Eao2ORq7PZxDlO6P8g_3-iABtftptjpFfvj0Z3xMS2z59Q?e=brnRWG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ## Tutorial
 - [Coding Bat](https://codingbat.com/)
