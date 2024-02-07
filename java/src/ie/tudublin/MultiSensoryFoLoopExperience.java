@@ -25,7 +25,6 @@ public class MultiSensoryFoLoopExperience extends PApplet {
     {
         background(0);
         stroke(255);
-        noStroke();
         switch(mode)
         {
             case 0:

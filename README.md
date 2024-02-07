@@ -2,8 +2,6 @@
 
 ![Logo](images/logo.png)
 
-Teams:
-
 Resources
 ---------
 - [Discord](https://discord.gg/htBfm2VA)
