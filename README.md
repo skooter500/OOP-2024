@@ -33,12 +33,12 @@ No lecture because of bank holiday
 
 Share screenshots on discord PLEASE. Today we will make multisensory for loops. In other words, loops that stimulate our senses with colours, hues and sounds. 
 
-Accept this individual assignment on github classroom. Clone the repository locally and make at least 5 commits as you go. Put your code into MultiSensoryForLoops.java. Have the keys 0-9 switch the screen to each pattern. The color space is set to HSB and the color values correspond to hue (color), saturation (amount of gray) and brigtness. Use the [Processing reference](https://processing.org/reference/).
+Accept this individual assignment on github classroom. Clone the repository locally and make at least 5 commits as you go. Put your code into MultiSensoryForLoops.java. Have the keys 0-9 switch the screen to each of the patterns below. The color space is set to HSB and the color values correspond to hue (color), saturation (amount of gray) and brigtness. Use the [Processing reference](https://processing.org/reference/). Use mouseX, mouseY, width and height variables. 
 
 ![Sketch](images/p31.png)
 
 
-![Sketch](images/p35.png)
+![Sketch](images/bshift.png)
 
 
 ![Sketch](images/p36.png)
@@ -52,17 +52,7 @@ Accept this individual assignment on github classroom. Clone the repository loca
 
 ![Sketch](images/p32.png)
 
-Try and draw this using ONE for loop. You will need the [text](https://processing.org/reference/text_.html) and [textAlign](https://processing.org/reference/textAlign_.html) functions:
-
 ![Sketch](images/p27.png)
-
-Use a nested loop to draw this:
-
-![Sketch](images/p23.png)
-
-Use sin and cos to draw this:
-
-![Sketch](images/p30.png)
 
 Use line, sin and cos to draw regular polygons like squares, pentagons, octogons etc:
 
@@ -70,6 +60,9 @@ Use line, sin and cos to draw regular polygons like squares, pentagons, octogons
 
 Bonus!
 
+Make your patterns interactive with the mouse.
+
+Use a for loop to play a sequence of tones at different pitches. This [article explains how](https://code.compartmental.net/minim/audiooutput_method_playnote.html). 
 
 # Week 2 - Java Fundamentals & Drawing
 
