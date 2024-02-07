@@ -34,8 +34,7 @@ public class MultiSensoryFoLoopExperience extends PApplet {
             case 1:
                 for (int i = 0 ; i < 10 ; i ++)
                 {
-                stroke(i*25,255,255);
-                fill(i*25,255,255);
+                fill(80,255,i*25);
                 rect(100*i, 0, 105, 800 );
                 }
                 break;
