@@ -75,8 +75,17 @@ public class MultiSensoryFoLoopExperience extends PApplet {
                         ellipse(k * 80 + 40, i * 80 + 40, 80, 80);
                     }
                 }
-            
-            break ; 
+            break ;
+            case 7 : 
+                for (int i = 0; i <= height; i += height / 10) {
+                    stroke (120, 100, 100 );
+                line(0, i, width, i);
+                }
+                for (int i = 0; i <= width; i += width / 10) {
+                line(i, 0, i, height);
+                }
+                break;
+ 
         }
                 //default goes here
         }
