@@ -38,11 +38,49 @@ public class MultiSensoryFoLoopExperience extends PApplet {
                 rect(100*i, 0, 105, 800 );
                 }
                 break;
-            default:
-                // Code goes here
-                break;
+            case 2:
+                for(int i = 0; i<10; i++){
+                stroke(i*25,255,255);
+                fill(i*25,255,255);
+                rect(100*i, 0, 105, 800 );
+                }       
+                break ;      
+            case 3 : 
+                for (int i =0 ; i < 10; i++) {
+                    fill (i*100+30,100,100) ; //fix coloring 
+                    square (i*80,i*80,80) ;
+                    square(i*80,height-(i+1)*80, 80);
+                }
+                break ; 
+            case 4 : 
+                for (int i = 0 ; i < 10 ; i ++) 
+                {   
+                    fill (60 + i*30 , 100,100);
+                    ellipse (width/2 , height/2, (10 - i) * (width / 10), (10 - i) * (height / 10));
+                }
+                break ;
+            case 5 :  
+            background (255) ; 
+            for (int i = 0 ; i < 10 ; i ++){
+                fill (i*20,255,255);
+                stroke (i*20,255,255);
+                circle (i*65+50, 50, 60); 
+            }
+            break ;
+
+            case 6 :
+                for (int i =0 ; i <10 ; i ++){
+                    for (int k = 0; k <10 ; k ++) {
+                        fill (k*20,255,255);
+                        ellipse(k * 80 + 40, i * 80 + 40, 80, 80);
+                    }
+                }
+            
+            break ; 
         }
-    }
+                //default goes here
+        }
+    
 
     public void keyPressed()
     {
