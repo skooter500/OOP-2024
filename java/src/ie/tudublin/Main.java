@@ -8,7 +8,7 @@ public class Main
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new MultiSensoryFoLoopExperience());
+        processing.core.PApplet.runSketch( a, new Arrays());
     }
 
 	public void doDogStuff()

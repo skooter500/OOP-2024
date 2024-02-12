@@ -31,6 +31,7 @@ public class MultiSensoryFoLoopExperience extends PApplet {
         switch(mode)
         {
             case 0:
+            {
                 int cols = mouseX;
                 noStroke();
                 float w = width / (float) cols;
@@ -45,13 +46,31 @@ public class MultiSensoryFoLoopExperience extends PApplet {
                 // line(0, 0, width, height);
                 // Code goes here
                 break;
+            }
             case 1:
-                for (int i = 0 ; i < 10 ; i ++)
+            {
+                offs += 1;
+                int numCircles = 10;
+                float w = width / (float) numCircles;
+                float c = 255 / (float) (numCircles + numCircles);
+                noStroke();
+                for (int j = 0 ; j < numCircles ; j ++)                
                 {
-                    // Code goes here
+                    for (int i = 0 ; i < numCircles ; i ++)
+                    {
+                        float x = (.5f * w) + i* w;
+                        float y = (.5f * w) + j* w;
+                        float cc = c * (i + j);
+                        fill((cc + offs) % 256, 255, 255);
+                        circle(x, y, w);
 
+                        // Code goes here
+
+                    }
                 }
+
                 break;
+            }
             default:
                 // Code goes here
                 break;
