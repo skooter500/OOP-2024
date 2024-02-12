@@ -10,6 +10,7 @@ Resources
 * [The git manual - read the first three chapters](http://git-scm.com/documentation)
 * [A video tutorial all about git/github](https://www.youtube.com/watch?v=p_PGUltnB6w)
 * [The Processing language reference](http://processing.org/reference/)
+- [git reference](https://github.com/skooter500/csresources/blob/master/git_ref.md)
 
 ## Contact the lecturer
 * Email: bryan.duggan@tudublin.ie
@@ -18,7 +19,10 @@ Resources
 ## Assignments
 - [Assignments](assignments.md)
 
-# Week 3
+# Week 4 - Arrays
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVvqKnadwxRHiFqi5a1BIGABb1_vjPamd3rVu-U5ggrhfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=s8PPg6)
+
+# Week 3 - Loops
 
 No lecture because of bank holiday
 
