@@ -21,14 +21,28 @@ public class MultiSensoryFoLoopExperience extends PApplet {
         colorMode(HSB);
     }
 
+    float offs = 0;
+
     public void draw()
     {
         background(0);
         stroke(255);
+        offs += 1f;
         switch(mode)
         {
             case 0:
-                line(0, 0, width, height);
+                int cols = mouseX;
+                noStroke();
+                float w = width / (float) cols;
+                float cgap = 255 / (float) cols;
+                for(int i= 0 ; i < cols ; i++)
+                {
+                    float x = i * w;
+                    float c = i * cgap;
+                    fill(60, 255, (cgap * i + offs) % 256);
+                    rect(x, 0, w, height);
+                }
+                // line(0, 0, width, height);
                 // Code goes here
                 break;
             case 1:
