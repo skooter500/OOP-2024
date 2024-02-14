@@ -30,7 +30,7 @@ Resources
 - Improved computational thinking skills
 - Learn Java syntax
 
-Accept [this assignment on Githuib classroom](https://classroom.github.com/a/0IcJ0ExH). Clone the repo. Attempt the exercises and make 5 commits.
+Accept [this assignment on Githuib classroom](https://classroom.github.com/a/0IcJ0ExH). Clone the repo. Attempt the exercises and make 5 commits. Feel free to play with hue and saturation in addition to hue. Share pictures on Discord! They are really great and so impressive.
 
 Check out this video of the assignment I wrote in GWBasic for the statistics module in first year WMT in Kevin St in 1990 (click the image for video):
 
