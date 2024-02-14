@@ -19,6 +19,13 @@ public class Arrays extends PApplet
 		return d + (howFar / r1) * r2;
 	}
 
+	void randomize()
+	{
+		for (int i = 0; i < rainfall.length; i++) {
+			rainfall[i] = random(500);
+		}
+	}
+
 	public void settings()
 	{
 		size(500, 500);
@@ -80,7 +87,7 @@ public class Arrays extends PApplet
 	public void setup() {
 		colorMode(HSB);
 		background(0);
-
+		randomize();
 		
 		
 	}

@@ -1,14 +1,10 @@
 package ie.tudublin;
 
-import ddf.minim.AudioOutput;
-import ddf.minim.Minim;
 import processing.core.PApplet;
 
-public class MultiSensoryFoLoopExperience extends PApplet {
+public class Loops extends PApplet {
 
 	int mode = 0;
-
-    
 
 	public void settings() {
 		size(500, 500);
@@ -90,6 +86,7 @@ public class MultiSensoryFoLoopExperience extends PApplet {
 				break;
 			case 3:
 				background(0);
+				colorMode(RGB);
 				float border = width * 0.1f;
 				for(int i = -5; i <= 5; i ++)
 				{
