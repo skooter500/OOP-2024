@@ -4,7 +4,7 @@
 
 Resources
 ---------
-- [Discord](https://discord.gg/htBfm2VA)
+- [Discord](https://discord.gg/XmNCFA8TAt)
 - [Install the software you will need for this module](install.md)
 * [Games Fleadh](http://www.gamesfleadh.ie/)
 * [The git manual - read the first three chapters](http://git-scm.com/documentation)
