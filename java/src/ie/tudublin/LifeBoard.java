@@ -43,7 +43,7 @@ public class LifeBoard {
 
     public void render()
     {
-        p.
+        
     }
 
 
