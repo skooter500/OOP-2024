@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+import java.util.Map;
+
 import processing.core.PApplet;
 
 public class LifeBoard {
@@ -43,6 +45,24 @@ public class LifeBoard {
 
     public void render()
     {
+        for(int row = 0 ; row < rows ; row ++)
+        {
+            for(int col = 0 ; col < cols ; col ++)
+            {
+                float x = p.map(col, 0, cols, 0, p.width);
+                float y = row * cellHeight;
+                p.stroke(0,255, 255);
+                if (board[row][col])
+                {
+                    p.fill(0, 255, 0);
+                }
+                else
+                {
+                    p.noFill();
+                }
+                p.rect(x, y, cellWidth, cellHeight);
+            }
+        }
         
     }
 
