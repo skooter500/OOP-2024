@@ -19,6 +19,77 @@ Resources
 ## Assignments
 - [Assignments](assignments.md)
 
+# Week 5 - The Game of Life
+
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/ESxsrjKyYotPs8aVyO_e-IIBlfGXREkU5knLVp34NzChBA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TSrJrj)
+- [Epic Conway's Game of Life](https://www.youtube.com/watch?v=C2vgICfQawE)
+- [3D Game of Life](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
+- [John Conway talks about the game of life](https://www.youtube.com/watch?v=FdMzngWchDk)
+- [The Dream of Life](https://www.youtube.com/watch?v=wU0PYcCsL6o)
+- [The Nature of Code](https://natureofcode.com/)
+- [A New Kind of Science](https://writings.stephenwolfram.com/2017/05/a-new-kind-of-science-a-15-year-view/)
+- Starting patterns [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and see examples in this video:
+
+[![YouTube](http://img.youtube.com/vi/HMYh4jKdtNU/0.jpg)](https://www.youtube.com/watch?v=HMYh4jKdtNU)
+
+## Lab
+### Learning Outcomes
+- How to implement the logic of an algorithm
+- How cellular automata works
+- Writing java code
+- Understanding how to visualise the contents of a 2D array
+- Iterate over a 2D array
+
+Accept this assignment. Clone the repo you are given, do the work below, commit and push your changes before Friday @ midnight.
+
+Implement the missing parts of the Game of Life:
+
+[![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
+
+Some extra things you can implement:
+
+- Increase size and change the size of the screen and see what effect this has on the simulation 
+- Press space to pause and resume the simulation
+- Press 1 to randomise the board again
+- Press 2 to clear the board
+- Press 3 to draw a cross shape and see how it evolves
+- Drag the mouse across the window to set cells at the mouse position to be alive.
+- Implement the [cell coloring algorithm](https://jimblackler.net/blog/?p=384)! This code will allow you to calculate the average of the 2 surrounding cell colors.
+
+```Java
+public float averageAround(float[][] board, int row, int col)
+    {
+        float xsum = 0;
+        float ysum = 0;
+        for(int r = row - 1; r <= row + 1 ; r ++)
+        {
+            for(int c = col - 1 ; c <= col + 1 ; c++)
+            {
+                float color = getCell(board, r, c);
+                if (!(r == row && c == col) && color != -1)
+                {
+                    
+                    float angle = map(color , 0, 255, -PI, PI);
+                    xsum += cos(angle);
+                    ysum += sin(angle);
+                }
+            }
+        }
+
+        xsum /= 3.0f;
+        ysum /= 3.0f;
+
+        return map(atan2(ysum, xsum), -PI, PI, 0, 255);
+    }
+```
+
+Some extra things you can implement that are not in the video
+
+- Draw a glider at the mouse position. This is starting pattern that will evolve a pattern that walks across the screen
+- Draw a Gosper Gun at the mouse position. This is a starting pattern that will spawn creatures indefinitely
+
+
+
 # Week 4 - Arrays
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVvqKnadwxRHiFqi5a1BIGABb1_vjPamd3rVu-U5ggrhfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=s8PPg6)
 
