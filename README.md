@@ -28,9 +28,7 @@ Resources
 - [The Dream of Life](https://www.youtube.com/watch?v=wU0PYcCsL6o)
 - [The Nature of Code](https://natureofcode.com/)
 - [A New Kind of Science](https://writings.stephenwolfram.com/2017/05/a-new-kind-of-science-a-15-year-view/)
-- Starting patterns [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and see examples in this video:
-
-[![YouTube](http://img.youtube.com/vi/HMYh4jKdtNU/0.jpg)](https://www.youtube.com/watch?v=HMYh4jKdtNU)
+- Starting patterns [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ## Lab
 ### Learning Outcomes
@@ -54,6 +52,8 @@ Some extra things you can implement:
 - Press 2 to clear the board
 - Press 3 to draw a cross shape and see how it evolves
 - Drag the mouse across the window to set cells at the mouse position to be alive.
+- Draw a glider at the mouse position. This is starting pattern that will evolve a pattern that walks across the screen
+- Draw a Gosper Gun at the mouse position. This is a starting pattern that will spawn creatures indefinitely
 - Implement the [cell coloring algorithm](https://jimblackler.net/blog/?p=384)! This code will allow you to calculate the average of the 2 surrounding cell colors.
 
 ```Java
@@ -83,12 +83,7 @@ public float averageAround(float[][] board, int row, int col)
     }
 ```
 
-Some extra things you can implement that are not in the video
-
-- Draw a glider at the mouse position. This is starting pattern that will evolve a pattern that walks across the screen
-- Draw a Gosper Gun at the mouse position. This is a starting pattern that will spawn creatures indefinitely
-
-
+[![YouTube](http://img.youtube.com/vi/HMYh4jKdtNU/0.jpg)](https://www.youtube.com/watch?v=HMYh4jKdtNU)
 
 # Week 4 - Arrays
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVvqKnadwxRHiFqi5a1BIGABb1_vjPamd3rVu-U5ggrhfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=s8PPg6)
