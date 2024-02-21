@@ -38,7 +38,7 @@ Resources
 - Understanding how to visualise the contents of a 2D array
 - Iterate over a 2D array
 
-Accept this assignment. Clone the repo you are given, do the work below, commit and push your changes before Friday @ midnight.
+Accept [this assignment](https://classroom.github.com/a/zHeLIhVL). Clone the repo you are given, do the work below, commit and push your changes before Friday @ midnight.
 
 Implement the missing parts of the Game of Life sp that your simulation looks like this:
 
