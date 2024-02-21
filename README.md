@@ -28,7 +28,7 @@ Resources
 - [The Dream of Life](https://www.youtube.com/watch?v=wU0PYcCsL6o)
 - [The Nature of Code](https://natureofcode.com/)
 - [A New Kind of Science](https://writings.stephenwolfram.com/2017/05/a-new-kind-of-science-a-15-year-view/)
-- Starting patterns [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [Starting patterns](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ## Lab
 ### Learning Outcomes
@@ -40,7 +40,7 @@ Resources
 
 Accept this assignment. Clone the repo you are given, do the work below, commit and push your changes before Friday @ midnight.
 
-Implement the missing parts of the Game of Life:
+Implement the missing parts of the Game of Life sp that your simulation looks like this:
 
 [![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
 
