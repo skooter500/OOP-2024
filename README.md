@@ -27,13 +27,18 @@ Resources
 ### Learning Outcomes
 
 - Practice for loops
+- Learn about color, sound and maths
 - Demonstrate an understanding of how digital audio works
 - Practice computational thinking and problem solving
 - Have fun making beautiful things
 
-Accept [this assignment on github classroom](https://classroom.github.com/a/4Kz925Aj). Make some commits and attempt this task. It will prepare you with some knowledge and skills to do the assignment. 
+Accept [this assignment on github classroom](https://classroom.github.com/a/4Kz925Aj). Make some commits and attempt this task. It will prepare you with knowledge and skills to do the assignment. 
 
-Audio1.java this is the code we wrote on Monday with some modifications. Checkout the keyPressed function. This starts and restarts the audio file when you press space. Also it sets the value of the mode variable to be the numbers 0-5 when you press the appropriate key on the keyboard. If your computer wont play the audio file for some reason,you can uncomment the code to read audio from the microphone instead or use a .wav file instead.
+Sound.java this is the code we wrote on Monday.
+
+Put your work today into the file Audio1.java which has some starter code for todays task.
+
+Checkout the keyPressed function. This starts and restarts the audio file when you press space. Also it sets the value of the mode variable to be the numbers 0-5 when you press the appropriate key on the keyboard. If your computer wont play the audio file for some reason,you can uncomment the code to read audio from the microphone instead or use a .wav file instead.
 
 You should make an array the same size as the buffer and lerp the samples to each element in the buffer (similar to how we did the average). This will make all your visualisations smoother
 

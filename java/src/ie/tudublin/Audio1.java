@@ -46,7 +46,7 @@ public class Audio1 extends PApplet
         // Uncomment this to use the microphone
         // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
         // ab = ai.mix; 
-        ap = minim.loadFile("heroplanet.mp3", 1024);
+        ap = minim.loadFile("tomp3.cc - 08 PsychNerD and Marco G  More Cowbell.mp3", 1024);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
