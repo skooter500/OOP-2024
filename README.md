@@ -40,7 +40,7 @@ Resources
 
 Accept [this assignment](https://classroom.github.com/a/zHeLIhVL). Clone the repo you are given, do the work below, commit and push your changes before Friday @ midnight.
 
-Implement the missing parts of the Game of Life sp that your simulation looks like this:
+Implement the missing parts of the Game of Life sp that your simulation looks like this (click for video):
 
 [![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
 
