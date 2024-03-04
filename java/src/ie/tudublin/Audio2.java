@@ -99,14 +99,25 @@ public class Audio2 extends PApplet
                     line(i, halfH + f, i, halfH - f);                    
                 }
 
-                fft.forward(lerpedBuffer);
+                fft.forward(ab);
 
+                int maxFFTIndex = 0;
                 for(int i = 0 ; i < fft.specSize() /2  ; i ++)
                 {
                     rect(i, 0, 2, fft.getBand(i) * 100);
+                    if (fft.getBand(i) > fft.getBand(maxFFTIndex))
+                    {
+                        maxFFTIndex = i;
+                    }
                 }
+                float freq = fft.indexToFreq(maxFFTIndex);
+
+                textSize(24);
+                text("Frequency: " + freq, cx, cy - 100);
 
                 
+
+
                 break;
         case 1:
             background(0);
