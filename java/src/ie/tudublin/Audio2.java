@@ -4,9 +4,10 @@ import ddf.minim.AudioBuffer;
 import ddf.minim.AudioInput;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
+import ddf.minim.analysis.FFT;
 import processing.core.PApplet;
 
-public class Audio1 extends PApplet
+public class Audio2 extends PApplet
 {
     Minim minim;
     AudioPlayer ap;
@@ -19,6 +20,8 @@ public class Audio1 extends PApplet
     float y = 0;
     float smoothedY = 0;
     float smoothedAmplitude = 0;
+
+    FFT fft;
 
     public void keyPressed() {
 		if (key >= '0' && key <= '9') {
@@ -36,23 +39,25 @@ public class Audio1 extends PApplet
 
     public void settings()
     {
-        //size(1024, 1000, P3D);
-        fullScreen(P3D, SPAN);
+        size(1024, 1000, P3D);
+        //fullScreen(P3D, SPAN);
     }
 
     public void setup()
     {
         minim = new Minim(this);
         // Uncomment this to use the microphone
-        // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
-        // ab = ai.mix; 
-        ap = minim.loadFile("heroplanet.mp3", 1024);
-        ap.play();
-        ab = ap.mix;
+         ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
+         ab = ai.mix; 
+        //ap = minim.loadFile("heroplanet.mp3", 1024);
+        //ap.play();
+        ab = ai.mix;
         colorMode(HSB);
 
         y = height / 2;
         smoothedY = y;
+
+        fft = new FFT(width, 44100);
 
         lerpedBuffer = new float[width];
     }
@@ -93,6 +98,15 @@ public class Audio1 extends PApplet
                     float f = lerpedBuffer[i] * halfH * 4.0f;
                     line(i, halfH + f, i, halfH - f);                    
                 }
+
+                fft.forward(lerpedBuffer);
+
+                for(int i = 0 ; i < fft.specSize() /2  ; i ++)
+                {
+                    rect(i, 0, 2, fft.getBand(i) * 100);
+                }
+
+                
                 break;
         case 1:
             background(0);

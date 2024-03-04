@@ -8,7 +8,7 @@ public class Main
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new Sound1());
+        processing.core.PApplet.runSketch( a, new Audio2());
     }
 
 	public void doDogStuff()

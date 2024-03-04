@@ -22,6 +22,8 @@ Resources
 # Week 6 - Audio Part 1
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EWqOmo5OT1JEqDQ10A_P1rEBXH9RfFLx21Utr2c4hEFOog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=OAcg7O)
 
+If you would like to be part of a team and dont have one, fill out this form and I will assign you a team.
+
 ## Lab
 
 ### Learning Outcomes
@@ -47,12 +49,15 @@ Ok now check out this video of 5 visuals you can make today. Pressing the keys 0
 [![YouTube](http://img.youtube.com/vi/xF7VrXZqLko/0.jpg)](https://www.youtube.com/watch?v=xF7VrXZqLko)
 
 
-0 - The wavy lines visual - To make this, flip the order of the x2, y2 parameters on the line
-1 - The waveform
-2 - The waveform drawn down the 4 sides of the screen
-3 - The circle - Use the lerped amplitude to control the size of the circle
-4 - The square - Again use the lerped amplitude to control the size of the square. You can also use rectMode(CENTER) to make the x and y parameters of the rect function determine the center of the rect rather than the coordinates of the top left corner
-5 - There is no visual associated with 5 in the video, so come up with your own!
+- The wavy lines visual - To make this, flip the order of the x2, y2 parameters on the line
+- The waveform
+- The waveform drawn down the 4 sides of the screen
+- The circle - Use the lerped amplitude to control the size of the circle
+- The square - Again use the lerped amplitude to control the size of the square. You can also use rectMode(CENTER) to make the x and y parameters of the rect function determine the center of the rect rather than the coordinates of the top left corner
+- There is no visual associated with 5 in the video, so come up with your own!
+
+
+The assignment repo
 
 
 # Week 5 - The Game of Life
