@@ -53,7 +53,37 @@ public class Player {
 
     public void render()
     {
-        yasc.circle(pos.x, pos.y, width);
+        if (yasc.keyPressed)
+        {
+            if (yasc.keyCode == yasc.LEFT)
+            {
+                pos.x = pos.x - 1;
+            }
+
+            if (yasc.keyCode == yasc.RIGHT)
+            {
+                pos.x = pos.x + 1;
+            }
+
+            if (yasc.keyCode == yasc.UP)
+            {
+                pos.y = pos.y - 1;
+            }
+
+            if (yasc.keyCode == yasc.DOWN)
+            {
+                pos.y = pos.y + 1;
+            }
+
+            
+        }
+        // yasc.circle(pos.x, pos.y, width);
+        yasc.stroke(255);
+        yasc.line(pos.x - halfW, pos.y + halfW, pos.x, pos.y - halfW);
+        yasc.line(pos.x, pos.y - halfW, pos.x + halfW, pos.y + halfW);
+        yasc.line(pos.x + halfW, pos.y + halfW, pos.x, pos.y);
+        yasc.line(pos.x, pos.y, pos.x - halfW, pos.y + halfW);
+           
     }
     
 }
