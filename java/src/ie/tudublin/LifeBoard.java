@@ -1,112 +1,143 @@
 package ie.tudublin;
 
-import java.util.Map;
-
 import processing.core.PApplet;
 
 public class LifeBoard {
-    
     boolean[][] board;
     boolean[][] next;
+    int size;
+    float cellSize;
+    PApplet pa;
 
-    int rows;
-    int cols;
-
-    float cellWidth;
-    float cellHeight;
-    PApplet p;
-
-    public LifeBoard(int rows, int cols, PApplet p)
+    public LifeBoard(int size, PApplet pa)
     {
-        this.rows = rows;
-        this.cols = cols;
-        this.p = p; 
-        board = new boolean[rows][cols];
-        cellWidth = p.width / (float) cols;
-        cellHeight = p.height / (float) rows;
-        
+        board = new boolean[size][size];
+        next = new boolean[size][size];
+        this.size = size;
+        this.pa = pa;
+        cellSize = pa.width / (float) size;
     }
 
-
-
-    void randomize()
+    public void randomise()
     {
-        for(int row = 0 ; row < rows ; row ++)
+        for(int row = 0 ; row < size ; row ++)
         {
-            for(int col = 0 ; col < cols ; col ++)
+            for(int col = 0 ; col < size ; col ++)
             {
-                float dice = p.random(1.0f);
-                board[row][col] = (dice < 0.5f);                
+                board[row][col] = pa.random(1.0f) > 0.5f;
             }
         }
     }
 
-
     public void update()
     {
-        // The rules are!
-        // If the cell is alive then
-        // If it has < 2 alive neighbours, it dies due to lonelyness
-        // If it has > 3 alive neighbours, it dies due to overcrouding
-        // If it has 2-3 live neighbours, it survives
-        // If the cell is dead, then it comes to life 
-        // in the next generation if it has exactly 3 
-        // live neighbours
+        // If cell is alive
+        // 2 -3 - Survives
+        // if a dead cell has 3 neighbours - comes to life
 
-        // Write a nested for loop to update the board each frame
-        // Read board, write to next
-        
-        // At the end, swap them like this:
-        // boolean[][] temp = board;
-        // board = next;
-        // next = temp;
+        for(int row = 0 ; row < size ; row ++)
+        {
+            for (int col = 0 ; col < size ; col ++)
+            {
+                int count = countCellsAround(row, col);
+
+                if (isAlive(row, col))
+                {
+                    if (count == 2 || count == 3)
+                    {
+                        next[row][col] = true;
+                    }
+                    else
+                    {
+                        next[row][col] = false;
+                    }
+                }
+                else
+                {
+                    if (count == 3)
+                    {
+                        next[row][col] = true;
+                    }
+                    else
+                    {
+                        next[row][col] = false;
+                    }
+                }
+            }
+        }
+
+        boolean[][] temp;
+        temp = board;
+        board = next;
+        next = temp;
     }
 
-    public void setCell(int row, int col, boolean value)
+    public int countCellsAround(int row, int col)
     {
-        if (row > 0 && col > 0 && row < rows && col < cols)
+        int count = 0;
+
+        // Your bit goes here!
+
+        for(int i = row - 1 ; i <= row + 1 ; i ++)
         {
-            board[row][col] = value;
+            for(int j = col -1 ; j <= col + 1; j ++)
+            {
+                if (! (i == row && j == col))
+                {
+                    if (isAlive(i, j))
+                    {
+                        count ++;
+                    }
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public void setAlive(int row, int col, boolean alive)
+    {
+        if (row >= 0 && row < size && col >= 0 && col < size)
+        {
+            board[row][col] = alive;
         }
     }
 
-    public boolean getCell(int row, int col)
+    public boolean isAlive(int row, int col)
     {
-        if (row > 0 && col > 0 && row < rows && col < cols)
+        if (row >= 0 && row < size && col >= 0 && col < size)
         {
-            return board[row][col];
+            return board[row][col]; 
         }
-        return false;
-    }
-
-    public int countCells(int row, int col)
-    {
-        return 0;
+        else
+        {
+            return false;
+        }
     }
 
     public void render()
     {
-        for(int row = 0 ; row < rows ; row ++)
+        pa.background(0);
+        for(int row = 0 ; row < size ; row ++)
         {
-            for(int col = 0 ; col < cols ; col ++)
+            for(int col = 0 ; col < size ; col ++)
             {
-                float x = p.map(col, 0, cols, 0, p.width);
-                float y = row * cellHeight;
-                p.stroke(200,255, 255);
+                float x = PApplet.map(col, 0, size, 0, pa.width);
+                float y = PApplet.map(row, 0, size, 0, pa.height);
+                x = cellSize * col;
+                y = cellSize * row;
+
                 if (board[row][col])
                 {
-                    p.fill(100, 255, 255);
+                    pa.fill(0, 255, 0);
                 }
                 else
                 {
-                    p.noFill();
+                    pa.noFill();
                 }
-                p.rect(x, y, cellWidth, cellHeight);
+                pa.rect(x, y, cellSize, cellSize);
             }
         }
         
     }
-
-
-
 }
