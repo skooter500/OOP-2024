@@ -55,14 +55,15 @@ public class Player {
     {
         if (yasc.keyPressed)
         {
+            
             if (yasc.keyCode == yasc.LEFT)
             {
-                pos.x = pos.x - 1;
+                rotation -= 0.1f;
             }
 
             if (yasc.keyCode == yasc.RIGHT)
             {
-                pos.x = pos.x + 1;
+                rotation += 0.1f;
             }
 
             if (yasc.keyCode == yasc.UP)
@@ -79,10 +80,12 @@ public class Player {
         }
         // yasc.circle(pos.x, pos.y, width);
         yasc.stroke(255);
-        yasc.line(pos.x - halfW, pos.y + halfW, pos.x, pos.y - halfW);
-        yasc.line(pos.x, pos.y - halfW, pos.x + halfW, pos.y + halfW);
-        yasc.line(pos.x + halfW, pos.y + halfW, pos.x, pos.y);
-        yasc.line(pos.x, pos.y, pos.x - halfW, pos.y + halfW);
+        yasc.translate(pos.x, pos.y);
+        yasc.rotate(rotation);        
+        yasc.line(- halfW, halfW, 0, - halfW);
+        yasc.line(0, - halfW, halfW, halfW);
+        yasc.line(halfW, halfW, 0, 0);
+        yasc.line(0, 0, - halfW, halfW);
            
     }
     
