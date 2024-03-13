@@ -19,6 +19,10 @@ Resources
 ## Assignments
 - [Assignments](assignments.md)
 
+# Week 7 - Audio Part 2
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVwt5k1sBRtOi-HCfHpz4YMBW-Y4VdqEXcu9UMV4NRgcGg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=x1tzgF)
+- [Farewell to Hughes](https://www.youtube.com/watch?v=Jv4ucHw9Hvs)
+
 # Week 6 - Audio Part 1
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EWqOmo5OT1JEqDQ10A_P1rEBXH9RfFLx21Utr2c4hEFOog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=OAcg7O)
 

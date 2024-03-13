@@ -114,7 +114,6 @@ public class Audio2 extends PApplet
 
                 textSize(24);
                 text("Frequency: " + freq, cx, cy - 100);
-
                 
 
 
