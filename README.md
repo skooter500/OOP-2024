@@ -19,6 +19,22 @@ Resources
 ## Assignments
 - [Assignments](assignments.md)
 
+# Week 8 - YASC - Part 1
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EV-Sh8bM07hLjgGcmbMvDT0BKADmrnSEk_dz2IlhlH2BVw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WoKXH5)
+
+# Lab 
+
+Your task today is to meet your team
+
+- Decide on a song. Select a few genres and decide on something that will work for all the team. Crazy experimental music, world music and live music performance and also options
+- Brainstorm some ideas. You can look at the playlists of the previous years as inspiration.
+- Meet me and tell me what u are planning
+- Fork the starter code git repo, set up the remotes
+- Add each team member as collaborator
+- Each team member clone the repo, get it working
+- Each team member make one commit
+
+
 # Week 7 - Audio Part 2
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVwt5k1sBRtOi-HCfHpz4YMBW-Y4VdqEXcu9UMV4NRgcGg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=x1tzgF)
 - [Farewell to Hughes](https://www.youtube.com/watch?v=Jv4ucHw9Hvs)
