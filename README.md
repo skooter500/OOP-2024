@@ -16,11 +16,32 @@ Resources
 * Email: bryan.duggan@tudublin.ie
 * Web: http://bryanduggan.org
 
-## Assignments
-- [Assignments](assignments.md)
+## Assignment
+- [Assignment](assignments.md)
+- Wed 24th April IN PERSON DEMOS
 
 # Week 8 - YASC - Part 1
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EV-Sh8bM07hLjgGcmbMvDT0BKADmrnSEk_dz2IlhlH2BVw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WoKXH5)
+
+## Tutorial
+
+```java
+public int countYZ(String str) {
+  int count = 0;
+  
+  for(int i = 0 ; i < str.length() ; i ++)
+  {
+    char c = Character.toLowerCase(str.charAt(i));
+    boolean isLast = (i == str.length() - 1);
+    
+    if ((c == 'y' || c == 'z') && (isLast || !Character.isLetter(str.charAt(i+1))))
+    {
+      count ++;
+    }
+  }
+  return count;
+}
+```
 
 # Lab 
 
@@ -34,6 +55,7 @@ Your task today is to meet your team
 - Each team member clone the repo, get it working
 - Each team member make one commit
 
+- [Submit your team details](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUNFcxMUNWNjAyRDVVSkVGQTJTMzM4NEFFVi4u)
 
 # Week 7 - Audio Part 2
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EVwt5k1sBRtOi-HCfHpz4YMBW-Y4VdqEXcu9UMV4NRgcGg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=x1tzgF)

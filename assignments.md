@@ -1,5 +1,8 @@
 # Object Oriented Programming Assignment 2024
 
+Stretch Goal! 
+Any team who forks the [i.am.dani repo](https://github.com/skooter500/iamdani) and integrates their visuals and does a pull request will be guaranteed in the FIRST category for all team members for the assignment. This can be done after the demo. Also your work will be seen at whatever events and festivals the project will be at this summer. I have BIG PLANS!!
+
 # Previous Years Lab Tests
 - https://github.com/skooter500/OOP-Test-2022
 - https://github.com/skooter500/OOP-LabTest-2020-Starter

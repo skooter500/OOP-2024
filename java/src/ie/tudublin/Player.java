@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PVector;
+import processing.video.*;
 
 public class Player {
     private PVector pos;
@@ -49,10 +50,17 @@ public class Player {
         this.col = col;
         this.width = width;
         this.halfW = width * 0.5f;
+        forward = new PVector(0, -1);
     }    
+
+    PVector forward;
+    float speed = 10;
 
     public void render()
     {
+
+        forward.x = yasc.sin(rotation);
+        forward.y = - yasc.cos(rotation);
         if (yasc.keyPressed)
         {
             
@@ -68,7 +76,8 @@ public class Player {
 
             if (yasc.keyCode == yasc.UP)
             {
-                pos.y = pos.y - 1;
+                pos.x = pos.x + forward.x * speed;
+                pos.y = pos.y + forward.y * speed;
             }
 
             if (yasc.keyCode == yasc.DOWN)
