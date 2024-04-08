@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import processing.core.PVector;
-import processing.video.*;
 
 public class Player {
     private PVector pos;
