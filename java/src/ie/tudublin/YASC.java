@@ -32,6 +32,7 @@ public class YASC extends PApplet
         {
             GameObject go = gameObjects.get(i);
             go.render();
+            
         }
 
         text("Game Objects: " + gameObjects.size(), 10, 10);
