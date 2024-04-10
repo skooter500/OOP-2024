@@ -20,6 +20,8 @@ Resources
 - [Assignment](assignments.md)
 - Wed 24th April IN PERSON DEMOS
 
+
+
 # Week 8 - YASC - Part 1
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EV-Sh8bM07hLjgGcmbMvDT0BKADmrnSEk_dz2IlhlH2BVw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WoKXH5)
 
